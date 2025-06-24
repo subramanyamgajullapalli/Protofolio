@@ -1,0 +1,81 @@
+/* ==== Dark Gradient Background ==== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom right, #0f172a, #1e293b);
+  color: #f1f5f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==== Link Styling ==== */
+a {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+/* ==== Section Titles ==== */
+h2, h3 {
+  color: #e2e8f0;
+}
+
+/* ==== Card Styling ==== */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ==== Section Containers ==== */
+section {
+  padding: 2rem;
+  background: transparent;
+}
+
+/* ==== Buttons ==== */
+.btn {
+  display: inline-block;
+  background-color: #1d4ed8;
+  color: #f1f5f9;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* ==== Footer ==== */
+footer {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem 1rem;
+  color: #94a3b8;
+  text-align: center;
+}
+
+/* ==== Responsive Fixes ==== */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
